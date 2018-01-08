@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,83 @@
     <title>Lab Project: Resume (01-08-18)</title>
     <link rel="stylesheet" href="/Users/walterlee/Documents/Covalence Lab Projects/Lab 1/lab1.css">
 </head>
+
 <body>
-    
-    <div class="namelogo">
-        <p>Your Name & Logo</p>
-    </div>
-   
-    <div class="nav">
-        <p>About</p>
-        <p>Experience</p>
-        <p>Work</p>
-        <p>Contact</p>
-    </div>
-    
-    <div class="img">
-        <img src=""/>
-    </div>
 
-    <div class="imgtitle">
-        <p>Designer, developer, and photographer.</p>
-        <p>CURRENTLY IN BIRMINGHAM, AL</p>
-    </div>
-
-    <div class="experience">
+    <nav>
+        <span class="name">Your Name & Logo</span>
         
-    </div>
-    
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+
+    <section class="hero">
+        <h1 class="text-red">Designer, developer, photographer.</h1>
+        <h3 class="text-uppercase">Currently in Birmingham, AL</h3>
+    </section>
+
+    <section id="about" class="about bg-gray">
+
+        <div class="left">
+            <h2>Hello</h2>
+            <h3>First Name Last Name</h3>
+            <h4>Auburn University</h4>
+            <h4>Bachelor of Fine Arts</h4>
+        </div>
+
+        <div class="right">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="experience" class="experience">
+
+    </section>
+
+    <section id="work" class="work">
+
+            <div class="container">
+                    <img src="img_avatar.png" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text">Hello World</div>
+                    </div>
+                  </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contactleft">
+            <h1>Let's Talk</h1>
+        </div>
+        <div class="contactright">
+            <h4>Let's work together.</h4>
+            <h4>email@gmail.com</h4>
+        </div>
+        
+        <form action="">
+            <input type="text" placeholder="Name" value=""><br>
+            <input type="text" placeholder="Email" value=""><br>
+            <input type="text" placeholder="Message" value=""><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+    </section>
+
+    <footer>
+        <p class="foot-uppercase">Thanks for visiting!</p>
+    </footer>
+
 </body>
+
 </html>
