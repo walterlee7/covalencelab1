@@ -3,8 +3,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 
 @font-face {
@@ -30,6 +30,7 @@ html, body {
     word-spacing: 16px;
 }
 
+
 .hero {
     border: 2px solid black;
     margin: 8px;
@@ -37,9 +38,15 @@ html, body {
 }
 
 .man{
-    margin: 4em;
-    display: block;
+    /* margin: 4em; */
+    display: flex;
     position: relative;
+    margin: auto;
+    padding: 8px;
+}
+
+.me {
+    /* position: absolute; */
 }
 
 .whoami {
@@ -47,7 +54,7 @@ html, body {
     width: 100%;
     top: 0;
     left: 0;
-    position: absolute;
+    position: relative;
     text-align: right;
 }
 
@@ -98,14 +105,14 @@ html, body {
     border: 2px solid black;
 }
 
+
 .experience {
-    border: 2px solid black;
     margin: 8px;
     justify-content: center;
     display: grid;
     grid-template-columns: 300px 300px, 300px;
     grid-gap: 5px;
-    font-size: 12px;
+    font-size: 18px;
 }
 
 .exp {
@@ -115,19 +122,13 @@ html, body {
     text-align: center;
     display: grid;
     padding: 5px;
-    /* grid-template-columns: 300px; */
-    /* grid-gap: 1px; */
     float: left;
 }
 
-.chain {
-    height: 2em;
-    width: 2em;
-    float: left;
-}
 
 .language {
-    border: 2px solid black;
+    border: 1px solid black;
+    background-color: rgba(184, 193, 214, 0.432);
     margin: 8px;
     justify-content: center;
     display: grid;
@@ -135,28 +136,56 @@ html, body {
     grid-gap: 10px;
   }
 
+abbr {
+    position: relative;
+}
+
+abbr:hover::after {
+    position: absolute;
+    bottom: 50%;
+    left: 80%;
+    display: block;
+    width: 150px;
+    padding: 1em;
+    background: rgb(214, 214, 214);
+    content: attr(title);
+    font-size: 90%;
+}
+
 .image {
+    border: 2px solid black;
     display: flex;
     width: 100%;
     height: auto;
     margin: 4px;
   }
 
+
+
 .data {
-    border: 2px solid black;
     margin: 8px;
     padding: 2em;
     text-align: center;
 }
 
+.details {
+    margin: 8px;
+    border: 1px solid black;
+    justify-content: center;
+    padding: 2px;
+}
+
+
 .footer {
-    border: 2px solid black;
-    margin: 4px;
+    margin: 8px;
     padding: 4px;
     justify-content: center;
     text-align: center;
 }
 
 .foot-uppercase {
+    border: 2px solid black;
+    display: inline-flex;
+    padding: 6px;
     text-transform: uppercase;
 }
