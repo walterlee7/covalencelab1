@@ -12,56 +12,55 @@
 <body>
 
     <nav class="navbar">
-
-        <div class="name">Walter Lee</div>
-
-        <div class="nav">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#language">Languages</a>
+        <div class="navform">
+            <div class="name">Walter Lee</div>
+            <div class="nav">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#language">Languages</a>
+                <a href="#audio">Audio</a>
+            </div>
         </div>
-
     </nav>
 
     <section class="hero">
-
-        <div class="man">
-            <img src="./images/walt.jpg" height="400" width="250" class="me">
-            <div class="whoami">
-                <h1 class="text-red">Full Stack Developer</h1>
-                <h3 class="text-uppercase">Currently in Nashville, TN</h3>
-                <h3>Email: walter.lee9@gmail.com</h3>
-                <a href="https://github.com/walterlee7">GitHub: walterlee7</a>
-                <br>
-                <br>
-                <a href="https://www.linkedin.com/in/walterlee7/">LinkedIn: walterlee7</a>
+        <div class="heroform">
+            <div class="hero-left">
+                <img src="./images/walt.jpg" height="400" width="250">
+                <div class="hero-right">
+                    <h1 class="text-title">Full Stack Developer</h1>
+                    <h3 class="text-uppercase">Currently in Nashville, TN</h3>
+                    <h3>Email: walter.lee9@gmail.com</h3>
+                    <a href="https://github.com/walterlee7">GitHub: walterlee7</a>
+                    <br>
+                    <br>
+                    <a href="https://www.linkedin.com/in/walterlee7/">LinkedIn: walterlee7</a>
+                </div>
             </div>
         </div>
-
     </section>
 
     <section id="about" class="about">
-
-        <div class="aboutleft">
-            <h2 class="abouthello">Welcome</h2>
-            <h3 class="aboutname">Walter Lee</h3>
-            <h4 class="aboutrepeat">Vanderbilt University</h4>
-            <h4 class="aboutrepeat">Bachelor of Science: Neuroscience</h4>
+        <div class="aboutform">
+            <div class="aboutleft">
+                <h2 class="abouthello">Welcome</h2>
+                <h3 class="aboutname">Walter Lee</h3>
+                <h4 class="aboutrepeat">Vanderbilt University</h4>
+                <h4 class="aboutrepeat">Bachelor of Science: Neuroscience</h4>
+            </div>
+            <div class="aboutright">
+                <p>
+                    Full stack software developer with a background in research lab management for 8 years. Experience working in teams and independently,
+                    consistently showing skills in problem-solving, multi-tasking, and detail-oriented tasks.
+                </p>
+            </div>
         </div>
-
-        <div class="aboutright">
-            <p>
-                Full stack software developer with a background in research lab management for 8 years. Experience working in teams and independently,
-                consistently showing skills in problem-solving, multi-tasking, and detail-oriented tasks.
-            </p>
-        </div>
-
     </section>
 
     <section id="experience" class="experience">
 
         <fieldset>
-            <legend>My Work Experience</legend>
+            <legend class="experience-title">My Work Experience</legend>
             <div class="exp">
                 <h2>Covalence Full Stack Developer Bootcamp</h2>
                 <p>
@@ -154,10 +153,10 @@
 
     </section>
 
-    <div class="data">
-        <form action="/action_page.php" target="_blank">
+    <div class="html-form">
+        <form action="" target="_blank">
             <fieldset>
-                <legend>HTML Form Example (Submit inoperative)</legend>
+                <legend class="html-form-title">HTML Form Example</legend>
                 Name
                 <br>
                 <input type="text" placeholder="Name" value="">
@@ -169,12 +168,12 @@
                 <input type="text" placeholder="Message" value="">
                 <br>
                 <br>
-                <input type="submit" value="Submit">
+                <button type="button" onclick="alert('Hello World!')">Submit</button>
             </fieldset>
         </form>
     </div>
 
-    <details class="details">
+    <details id="audio" class="audio">
         <summary>Audio Track HTML Examples</summary>
         <audio controls>
             <source src="./audio/ambient.mp3" type="audio/mpeg">
