@@ -217,12 +217,26 @@ abbr:hover::after {
 .audio {
     background-color: white;
     margin: 0 auto;
-    width: 80%;
+    width: 50%;
     border: 1px solid black;
     padding: 8px;
     justify-content: center;
     padding: 2px;
 }
+
+
+
+
+.stats {
+    background-color: white;
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 8px;
+    justify-content: center;
+    padding: 2px;
+}
+
 
 
 
