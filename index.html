@@ -20,6 +20,7 @@
                 <a href="#language">Languages</a>
                 <a href="#audio">Audio</a>
                 <a href="#stats">Stats</a>
+                <a href="#favorites">Favorites</a>
             </div>
         </div>
     </nav>
@@ -43,17 +44,26 @@
 
     <section id="about" class="about">
         <div class="aboutform">
+
             <div class="aboutleft">
                 <h2 class="abouthello">Welcome</h2>
                 <h3 class="aboutname">Walter Lee</h3>
                 <h4 class="aboutrepeat">Vanderbilt University</h4>
                 <h4 class="aboutrepeat">Bachelor of Science: Neuroscience</h4>
+                <object data="./audio/mortal.mp3">
+                    <param name="" value="">
+                </object>
             </div>
             <div class="aboutright">
                 <p>
                     Full stack software developer with a background in research lab management for 8 years. Experience working in teams and independently,
                     consistently showing skills in problem-solving, multi-tasking, and detail-oriented tasks.
                 </p>
+
+                <video width="480" height="360" controls autoplay loop>
+                    <source src="./video/sush.mp4" type="video/mp4">
+                </video>
+
             </div>
         </div>
     </section>
@@ -210,34 +220,154 @@
         </audio>
     </details>
 
-    <details id="stats" class="stats" align=center>
-        <summary align=left>My Stats</summary>
+    <details id="stats" class="stats">
+        <summary>Stats</summary>
         <p>Strength</p>
-        <meter value="7" min="0" max="10">7 out of 10</meter>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" value="70"> 100 +
+            <input type="number" id="b" value="5"> =
+            <output name="x" for="a b"></output>
+        </form>
+        <meter value="7" min="0" max="10"></meter>
         <p>Perception</p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" value="70"> 100 +
+            <input type="number" id="b" value="5"> =
+            <output name="x" for="a b"></output>
+        </form>
         <meter value="8" min="0" max="10">8 out of 10</meter>
         <p>Endurance</p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" value="70"> 100 +
+            <input type="number" id="b" value="5"> =
+            <output name="x" for="a b"></output>
+        </form>
         <meter value="6" min="0" max="10">6 out of 10</meter>
         <p>Charisma</p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" value="70"> 100 +
+            <input type="number" id="b" value="5"> =
+            <output name="x" for="a b"></output>
+        </form>
         <meter value="7" min="0" max="10">7 out of 10</meter>
         <p>Intelligence</p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" value="70"> 100 +
+            <input type="number" id="b" value="5"> =
+            <output name="x" for="a b"></output>
+        </form>
         <meter value="9" min="0" max="10">9 out of 10</meter>
         <p>Agility</p>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" value="70"> 100 +
+            <input type="number" id="b" value="5"> =
+            <output name="x" for="a b"></output>
+        </form>
         <meter value="5" min="0" max="10">5 out of 10</meter>
         <p>Luck</p>
-        <meter value="5" min="0" max="10">5 out of 10</meter>
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" value="70"> 100 +
+            <input type="number" id="b" value="5"> =
+            <output name="x" for="a b"></output>
+        </form>
+        <progress value="50" max="100"></progress>
 
-        <p align=center>
+        <p>
             <a target=_blank href=http://www.nodiatis.com/personality.htm>
                 <img border=0 src=http://www.nodiatis.com/pub/19.jpg>
             </a>
         </p>
     </details>
 
+    <details id="favorites" class="favorites">
+        <summary>Favorites</summary>
+        <select>
+            <optgroup label="Justice League">
+                <option value="batman">Batman</option>
+                <option value="superman">Superman</option>
+                <option value="wonderwoman">Wonder Woman</option>
+            </optgroup>
+        </select>
+        <br>
+        <select>
+            <optgroup label="Avengers">
+                <option value="ironman">Iron Man</option>
+                <option value="thor">Thor</option>
+                <option value="blackwidow">Black Widow</option>
+            </optgroup>
+        </select>
+        <select>
+            <optgroup label="Star Trek or Star Wars">
+                <option value="startrek">Star Trek</option>
+                <option value="starwars">Star Wars</option>
+            </optgroup>
+        </select>
+        <br>
+        <select>
+            <optgroup label="Superpower">
+                <option value="superintellect">Super Intellect</option>
+                <option value="superstrength">Super Strength</option>
+                <option value="superspeed">Super Speed</option>
+            </optgroup>
+        </select>
+        <select>
+            <optgroup label="Favorite Pet">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="hamster">Hamster</option>
+            </optgroup>
+        </select>
+        <select>
+            <optgroup label="Operating System">
+                <option value="windows">Windows</option>
+                <option value="mac">MAC</option>
+                <option value="linux">Linux</option>
+            </optgroup>
+        </select>
+        <br>
+        <select>
+            <optgroup label="Phone OS">
+                <option value="android">Android</option>
+                <option value="ios">iOS</option>
+                <option value="windows">Windows</option>
+                <option value="blackberry">BlackBerry</option>
+            </optgroup>
+        </select>
+        <select>
+            <optgroup label="Paranormal Movie">
+                <option value="theconjuring">The Conjuring</option>
+                <option value="it">IT</option>
+                <option value="thering">The Ring</option>
+                <option value="thegrudge">The Grudge</option>
+            </optgroup>
+        </select>
+        <select>
+            <optgroup label="Favorite Show">
+                <option value="doctorwho">Doctor Who</option>
+                <option value="gameofthrones">Game of Thrones</option>
+                <option value="strangerthings">Stranger Things</option>
+                <option value="thewalkingdead">The Walking Dead</option>
+            </optgroup>
+        </select>
+        <select>
+            <optgroup label="Favorite Instrument">
+                <option value="piano">Piano</option>
+                <option value="guitar">Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="violin">Violin</option>
+            </optgroup>
+        </select>
+    </details>
+
     <footer class="footer">
-
         <p class="foot-uppercase">Thanks for visiting!</p>
-
     </footer>
 
 </body>

@@ -37,13 +37,14 @@ html, body {
 
 .name {
     float: left;
-    padding: 4px;
+    padding: 2px;
 }
 
 .nav {
     text-align: right;
-    word-spacing: 10px;
+    word-spacing: 4px;
     padding: 4px;
+    font-size: 12px;
 }
 
 
@@ -237,6 +238,17 @@ abbr:hover::after {
     padding: 2px;
 }
 
+
+
+.favorites {
+    background-color: white;
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 8px;
+    justify-content: center;
+    padding: 2px;
+}
 
 
 
