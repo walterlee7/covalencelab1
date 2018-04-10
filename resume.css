@@ -69,6 +69,8 @@ html, body {
 }
 
 .hero-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto;
     padding: 8px;
@@ -79,15 +81,18 @@ html, body {
 }
 
 .hero-left:hover .hero-sq, .hero-left:hover .hero-sq1, .hero-left:hover .hero-sq2, .hero-left:hover .hero-sq3, .hero-left:hover .hero-sq4, .hero-left:hover .hero-sq5, .hero-left:hover .hero-sq6, .hero-left:hover .hero-sq7 {
-    transform: translateX(400px);
+    -webkit-transform: translateX(400px);
+            transform: translateX(400px);
   }
 
 .hero-sq1 {
     width: 30px;
     height: 50px;
     background: rgb(0, 102, 255);
+    -webkit-transition: all 2.5s linear;
     transition: all 2.5s linear;
-    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
     border-radius: 10px;
 }
 
@@ -99,8 +104,10 @@ div.hero-sq1:hover {
     width: 30px;
     height: 50px;
     background: rgb(0, 255, 55);
+    -webkit-transition: all 2.5s ease;
     transition: all 2.5s ease;
-    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
     border-radius: 20px;
 }
 
@@ -112,8 +119,10 @@ div.hero-sq2:hover {
     width: 30px;
     height: 50px;
     background: rgb(0, 195, 255);
+    -webkit-transition: all 2.5s ease-in;
     transition: all 2.5s ease-in;
-    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
     border-radius: 30px;
 }
 
@@ -125,8 +134,10 @@ div.hero-sq3:hover {
     width: 30px;
     height: 50px;
     background: rgb(153, 151, 151);
+    -webkit-transition: all 1.5s ease-out;
     transition: all 1.5s ease-out;
-    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
     border-radius: 40px;
 }
 
@@ -138,8 +149,10 @@ div.hero-sq4:hover {
     width: 30px;
     height: 50px;
     background: rgb(0, 255, 64);
+    -webkit-transition: all 5.5s ease-in-out;
     transition: all 5.5s ease-in-out;
-    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
     border-radius: 50px;
 }
 
@@ -151,8 +164,10 @@ div.hero-sq5:hover {
     width: 30px;
     height: 50px;
     background: rgb(0, 183, 255);
+    -webkit-transition: all 4.5s cubic-bezier(0, 1, 0.98, 0);
     transition: all 4.5s cubic-bezier(0, 1, 0.98, 0);
-    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
     border-radius: 60px;
 }
 
@@ -164,8 +179,10 @@ div.hero-sq6:hover {
     width: 30px;
     height: 50px;
     background: rgb(89, 0, 255);
+    -webkit-transition: all 4.5s linear;
     transition: all 4.5s linear;
-    transition-delay: 0.15s;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
     border-radius: 70px;
 }
 
@@ -189,7 +206,9 @@ div.hero-sq7:hover {
     border-radius: 10px;
     padding: 2px;
     border: 1px solid;
-    box-shadow: 5px 8px;
+    -webkit-box-shadow: 5px 8px;
+            box-shadow: 5px 8px;
+    -webkit-transition: all 5s ease-in-out;
     transition: all 5s ease-in-out;
 }
 
@@ -201,7 +220,9 @@ div.hero-sq7:hover {
     border-radius: 10px;
     padding: 4px;
     border: 1px solid;
-    box-shadow: 5px 8px;
+    -webkit-box-shadow: 5px 8px;
+            box-shadow: 5px 8px;
+    -webkit-transition: all 4s ease-in-out;
     transition: all 4s ease-in-out;
 }
 
@@ -211,7 +232,9 @@ div.hero-sq7:hover {
     background-color: white;
     display: inline;
     border: 1px solid;
-    box-shadow: 5px 8px;
+    -webkit-box-shadow: 5px 8px;
+            box-shadow: 5px 8px;
+    -webkit-transition: all 3s ease-in-out;
     transition: all 3s ease-in-out;
 }
 
@@ -330,12 +353,14 @@ div.hero-sq7:hover {
 
 .abouthello {
     font-size: 40pt;
-    transform: rotate(355deg);
+    -webkit-transform: rotate(355deg);
+            transform: rotate(355deg);
     text-shadow: 15px 15px rgb(171, 176, 207);
 }
 
 h2.abouthello:hover {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
 }
 
 .aboutname {
@@ -354,7 +379,8 @@ h2.abouthello:hover {
     padding: 8px;
     float: right;
     border: 10px solid transparent;
-    border-image: url(./images/tree.jpg) 30 stretch;
+    -o-border-image: url(./images/tree.jpg) 30 stretch;
+       border-image: url(./images/tree.jpg) 30 stretch;
     border-radius: 5px;
 }
 
