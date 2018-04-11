@@ -21,18 +21,16 @@ html, body {
 
 
 .navbar {
-    margin: 16px;
-    margin: 0 auto;
-    width: 60%;
-    z-index: 500;
+    position: relative;
+    z-index: 1;
 }
 
 .navform {
-    background-color: white;
-    width: 60%;
+    background-color: rgb(222, 226, 226);
+    width: 100%;
     border: 1px solid black;
     position: fixed;
-    top: 0;
+    top: 0px;
 }
 
 .name {
@@ -54,7 +52,7 @@ html, body {
 .hero {
     margin: 20px;
     margin-top: 30px;
-    
+
 }
 
 .heroform {
@@ -64,7 +62,7 @@ html, body {
     width: 60%;
     background-image: url("./images/star.jpeg");
     background-repeat: no-repeat;
-    background-size: 2500px 1000px; 
+    background-size: 2500px 1000px;
     background-position: center;
 }
 
@@ -77,12 +75,12 @@ html, body {
 }
 
 .hero-sq {
-    float: left; 
+    float: left;
 }
 
 .hero-left:hover .hero-sq, .hero-left:hover .hero-sq1, .hero-left:hover .hero-sq2, .hero-left:hover .hero-sq3, .hero-left:hover .hero-sq4, .hero-left:hover .hero-sq5, .hero-left:hover .hero-sq6, .hero-left:hover .hero-sq7 {
-    -webkit-transform: translateX(400px);
-            transform: translateX(400px);
+    -webkit-transform: translateX(300px);
+            transform: translateX(300px);
   }
 
 .hero-sq1 {
@@ -195,7 +193,7 @@ div.hero-sq7:hover {
     width: 100%;
     text-align: right;
     margin-bottom: 20px;
-  
+
 }
 
 .text-title {
