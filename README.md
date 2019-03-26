@@ -11,4 +11,4 @@ Description:
 
 Instructions:
 
-1. To view website, open: index.html.
+1. Site link: https://walterlee7.github.io/covalencelab1/
