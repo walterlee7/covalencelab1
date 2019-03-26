@@ -1,0 +1,22 @@
+{
+    "name": "lab-1",
+    "version": "1.0.0",
+    "description": "Walter Lee Resume",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/walterlee7/covalencelab1.git"
+    },
+    "author": "Walter Lee",
+    "license": "ISC",
+    "homepage": "https://github.com/walterlee7/covalencelab1",
+    "bugs": {
+        "url": "https://github.com/walterlee7/covalencelab1/issues"
+    },
+    "dependencies": {
+        "gh-pages": "^2.0.1"
+    }
+}
