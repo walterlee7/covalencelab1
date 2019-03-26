@@ -4,7 +4,7 @@
     "description": "Walter Lee Resume",
     "main": "index.js",
     "scripts": {
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d client"
     },
     "repository": {
         "type": "git",
