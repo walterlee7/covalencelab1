@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Walter Lee Resume in HTML and CSS</title>
     <link rel="stylesheet" href="./resume.css">
@@ -38,10 +38,8 @@
                     <div class="hero-sq6"></div>
                     <div class="hero-sq7"></div>
                 </div>
-
             </div>
             <div class="hero-right">
-
                 <h1 class="text-title">Full Stack Developer</h1>
                 <br>
                 <br>
@@ -50,7 +48,7 @@
                 <br>
                 <br>
                 <br>
-                <h3 class="hero-text">Email: walter.lee9@gmail.com</h3>
+                <h3 class="hero-text">Email: walter.lee.developer@gmail.com</h3>
                 <br>
                 <br>
                 <br>
@@ -71,7 +69,7 @@
                 <h3 class="aboutname">Walter Lee</h3>
                 <h4 class="aboutrepeat">Vanderbilt University</h4>
                 <h4 class="aboutrepeat">Bachelor of Science: Neuroscience</h4>
-                <audio controls>
+                <audio id="aboutAudio" controls>
                     <source src="./audio/mortal.mp3" type="audio/mpeg">
                     <br> Your browser does not support the audio element.
                 </audio>
@@ -82,11 +80,12 @@
             </div>
             <div class="aboutright">
                 <p>
-                    Full stack software developer with a background in research lab management for 8 years. Experience working in teams and independently,
+                    Full stack software developer with a background in research lab management for 8 years. Experience
+                    working in teams and independently,
                     consistently showing skills in problem-solving, multi-tasking, and detail-oriented tasks.
                 </p>
 
-                <video width="360" height="240" controls autoplay loop>
+                <video id="video" width="360" height="240" controls autoplay loop>
                     <source src="./video/sush.mp4" type="video/mp4">
                 </video>
 
@@ -223,7 +222,7 @@
 
     <details id="audio" class="audio">
         <summary>Audio Track HTML Examples</summary>
-        <audio controls>
+        <audio id="audioAudio" controls>
             <source src="./audio/ambient.mp3" type="audio/mpeg">
             <br> Your browser does not support the audio element.
         </audio>
@@ -317,90 +316,85 @@
         <progress value="50" max="100"></progress>
 
         <p>
-            <a target=_blank href=http://www.nodiatis.com/personality.htm>
-                <img border=0 src=http://www.nodiatis.com/pub/19.jpg>
-            </a>
-        </p>
-    </details>
-
-    <details id="favorites" class="favorites">
-        <summary>Favorites</summary>
-        <select>
-            <optgroup label="Justice League">
-                <option value="batman">Batman</option>
-                <option value="superman">Superman</option>
-                <option value="wonderwoman">Wonder Woman</option>
-            </optgroup>
-        </select>
-        <br>
-        <select>
-            <optgroup label="Avengers">
-                <option value="ironman">Iron Man</option>
-                <option value="thor">Thor</option>
-                <option value="blackwidow">Black Widow</option>
-            </optgroup>
-        </select>
-        <select>
-            <optgroup label="Star Trek or Star Wars">
-                <option value="startrek">Star Trek</option>
-                <option value="starwars">Star Wars</option>
-            </optgroup>
-        </select>
-        <br>
-        <select>
-            <optgroup label="Superpower">
-                <option value="superintellect">Super Intellect</option>
-                <option value="superstrength">Super Strength</option>
-                <option value="superspeed">Super Speed</option>
-            </optgroup>
-        </select>
-        <select>
-            <optgroup label="Favorite Pet">
-                <option value="cat">Cat</option>
-                <option value="dog">Dog</option>
-                <option value="hamster">Hamster</option>
-            </optgroup>
-        </select>
-        <select>
-            <optgroup label="Operating System">
-                <option value="windows">Windows</option>
-                <option value="mac">MAC</option>
-                <option value="linux">Linux</option>
-            </optgroup>
-        </select>
-        <br>
-        <select>
-            <optgroup label="Phone OS">
-                <option value="android">Android</option>
-                <option value="ios">iOS</option>
-                <option value="windows">Windows</option>
-                <option value="blackberry">BlackBerry</option>
-            </optgroup>
-        </select>
-        <select>
-            <optgroup label="Paranormal Movie">
-                <option value="theconjuring">The Conjuring</option>
-                <option value="it">IT</option>
-                <option value="thering">The Ring</option>
-                <option value="thegrudge">The Grudge</option>
-            </optgroup>
-        </select>
-        <select>
-            <optgroup label="Favorite Show">
-                <option value="doctorwho">Doctor Who</option>
-                <option value="gameofthrones">Game of Thrones</option>
-                <option value="strangerthings">Stranger Things</option>
-                <option value="thewalkingdead">The Walking Dead</option>
-            </optgroup>
-        </select>
-        <select>
-            <optgroup label="Favorite Instrument">
-                <option value="piano">Piano</option>
-                <option value="guitar">Guitar</option>
-                <option value="drums">Drums</option>
-                <option value="violin">Violin</option>
-            </optgroup>
-        </select>
+            <a target=_blank href=http://www.nodiatis.com/personality.htm> <img border=0
+                src=http://www.nodiatis.com/pub/19.jpg> </a> </p> </details> <details id="favorites" class="favorites">
+                <summary>Favorites</summary>
+                <select>
+                    <optgroup label="Justice League">
+                        <option value="batman">Batman</option>
+                        <option value="superman">Superman</option>
+                        <option value="wonderwoman">Wonder Woman</option>
+                    </optgroup>
+                </select>
+                <br>
+                <select>
+                    <optgroup label="Avengers">
+                        <option value="ironman">Iron Man</option>
+                        <option value="thor">Thor</option>
+                        <option value="blackwidow">Black Widow</option>
+                    </optgroup>
+                </select>
+                <select>
+                    <optgroup label="Star Trek or Star Wars">
+                        <option value="startrek">Star Trek</option>
+                        <option value="starwars">Star Wars</option>
+                    </optgroup>
+                </select>
+                <br>
+                <select>
+                    <optgroup label="Superpower">
+                        <option value="superintellect">Super Intellect</option>
+                        <option value="superstrength">Super Strength</option>
+                        <option value="superspeed">Super Speed</option>
+                    </optgroup>
+                </select>
+                <select>
+                    <optgroup label="Favorite Pet">
+                        <option value="cat">Cat</option>
+                        <option value="dog">Dog</option>
+                        <option value="hamster">Hamster</option>
+                    </optgroup>
+                </select>
+                <select>
+                    <optgroup label="Operating System">
+                        <option value="windows">Windows</option>
+                        <option value="mac">MAC</option>
+                        <option value="linux">Linux</option>
+                    </optgroup>
+                </select>
+                <br>
+                <select>
+                    <optgroup label="Phone OS">
+                        <option value="android">Android</option>
+                        <option value="ios">iOS</option>
+                        <option value="windows">Windows</option>
+                        <option value="blackberry">BlackBerry</option>
+                    </optgroup>
+                </select>
+                <select>
+                    <optgroup label="Paranormal Movie">
+                        <option value="theconjuring">The Conjuring</option>
+                        <option value="it">IT</option>
+                        <option value="thering">The Ring</option>
+                        <option value="thegrudge">The Grudge</option>
+                    </optgroup>
+                </select>
+                <select>
+                    <optgroup label="Favorite Show">
+                        <option value="doctorwho">Doctor Who</option>
+                        <option value="gameofthrones">Game of Thrones</option>
+                        <option value="strangerthings">Stranger Things</option>
+                        <option value="thewalkingdead">The Walking Dead</option>
+                    </optgroup>
+                </select>
+                <select>
+                    <optgroup label="Favorite Instrument">
+                        <option value="piano">Piano</option>
+                        <option value="guitar">Guitar</option>
+                        <option value="drums">Drums</option>
+                        <option value="violin">Violin</option>
+                    </optgroup>
+                </select>
 
     </details>
 
