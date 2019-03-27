@@ -1,4 +1,4 @@
-Walter Lee Silly Website
+Walter Lee - A Silly Website
 
 Uses:
 
