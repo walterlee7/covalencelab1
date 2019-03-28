@@ -3,12 +3,13 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    max-width:100%;
+    max-width: 100%;
     background: rgba(74,74,74,1);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(74,74,74,1)), color-stop(24%, rgba(71,71,71,0.91)), color-stop(53%, rgba(69,69,69,0.81)), color-stop(100%, rgba(82,82,82,1)));
     background: linear-gradient(135deg, rgba(74,74,74,1) 0%, rgba(71,71,71,0.91) 24%, rgba(69,69,69,0.81) 53%, rgba(82,82,82,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#525252', GradientType=1 );
 }
+
 
 @font-face {
     font-family: 'Playfair';
@@ -52,7 +53,7 @@ html, body {
     background-color: white;
     border: 1px solid black;
     margin: 0 auto;
-    width: 60%;
+    width: 95%;
     background-image: url("./images/star.jpeg");
     background-repeat: no-repeat;
     background-size: 2500px 1000px;
@@ -64,6 +65,7 @@ html, body {
     display: -ms-flexbox;
     display: flex;
     margin: auto;
+    width: 100%;
     padding: 8px;
 }
 
@@ -242,16 +244,15 @@ div.hero-sq7:hover {
 
 .aboutform {
     margin: 0 auto;
-    width: 60%;
+    width: 90%;
 }
 
 .aboutleft {
     background-color: white;
     border: 1px solid black;
     text-align: center;
-    float: left;
-    width: 38%;
-    margin: 2%;
+    width: 90%;
+    margin: auto;
     border-radius: 5%;
 }
 
@@ -372,16 +373,14 @@ h2.abouthello:hover {
 .aboutright {
     background-color: white;
     text-align: center;
-    width: 40%;
-    margin: 5%;
-    padding: 8px;
-    float: right;
-    border: 10px solid transparent;
-    -o-border-image: url(./images/tree.jpg) 30 stretch;
-       border-image: url(./images/tree.jpg) 30 stretch;
-    border-radius: 5px;
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
 }
 
+.about-para {
+    margin: 0 auto;
+}
 
 .experience {
     margin: 20px;
@@ -391,7 +390,6 @@ h2.abouthello:hover {
     display: grid;
     grid-template-columns: 300px 300px, 300px;
     grid-gap: 5px;
-    font-size: 18px;
 }
 
 .experience-title {
@@ -413,7 +411,13 @@ h2.abouthello:hover {
 }
 
 
-
+@media only screen and (max-width: 768px) {
+    #language {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 0.5em;
+    }
+  }
 
 
 .language {
@@ -423,7 +427,7 @@ h2.abouthello:hover {
             justify-content: center;
     display: grid;
     grid-template-columns: 200px 200px 200px;
-    grid-gap: 10px;
+    grid-gap: 5px;
   }
 
 abbr {
@@ -449,16 +453,13 @@ abbr:hover::after {
     display: flex;
     width: 100%;
     height: auto;
-    margin: 4px;
   }
-
-
 
 
 
 .html-form {
     margin: 0 auto;
-    width: 40%;
+    width: 80%;
     padding: 2em;
     text-align: center;
 }
@@ -476,7 +477,7 @@ abbr:hover::after {
 .audio {
     background-color: white;
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
     border: 1px solid black;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -490,7 +491,7 @@ abbr:hover::after {
 .stats {
     background-color: white;
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
     border: 1px solid black;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -503,7 +504,7 @@ abbr:hover::after {
 .favorites {
     background-color: white;
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
     border: 1px solid black;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
