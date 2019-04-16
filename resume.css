@@ -407,7 +407,6 @@ h2.abouthello:hover {
     text-align: center;
     display: grid;
     padding: 5px;
-    float: left;
 }
 
 
@@ -533,5 +532,4 @@ abbr:hover::after {
     padding: 6px;
     text-transform: uppercase;
 }
-
 
