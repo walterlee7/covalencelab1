@@ -1,4 +1,4 @@
-Walter Lee Silly Website
+Walter Lee - First Website
 
 Uses:
 
@@ -9,6 +9,3 @@ Description:
 
 1. This was my first GitHub repository for the Covalence Bootcamp.
 
-Instructions:
-
-1. Site link: https://walterlee7.github.io/covalencelab1/
