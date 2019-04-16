@@ -1,4 +1,5 @@
 {
+    "homepage": "https://walterlee7.github.io/covalencelab1",
     "name": "lab-1",
     "version": "1.0.0",
     "description": "Walter Lee Resume",
@@ -12,7 +13,6 @@
     },
     "author": "Walter Lee",
     "license": "ISC",
-    "homepage": "https://github.com/walterlee7/covalencelab1",
     "bugs": {
         "url": "https://github.com/walterlee7/covalencelab1/issues"
     },
